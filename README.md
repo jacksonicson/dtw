@@ -1,4 +1,4 @@
-dtw
+DTW
 ===
 
-Dynamic Time Warping Algorithm
+Dynamic Time Warping Algorithm in Python
