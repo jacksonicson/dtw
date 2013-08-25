@@ -37,8 +37,7 @@ class Dtw(object):
         min_i1, min_i2 = min((i1 - 1, i2), (i1, i2 - 1), (i1 - 1, i2 - 1),
                              key=lambda x: self.calculate_backward(*x))
 
-        self._map[(i1, i2)] = self.get_distance(i1, i2) + \
-            self.calculate_backward(min_i1, min_i2)
+        self._map[(i1, i2)] = self.get_distance(i1, i2) + self.calculate_backward(min_i1, min_i2)
 
         return self._map[(i1, i2)]
 
